@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PDF Display</title>
+    <title>View My PDF</title>
     <style>
         body {
             display: flex;
@@ -12,27 +12,23 @@
             height: 100vh;
             margin: 0;
             background: #f4f4f4; /* Light gray background */
-            padding: 10px; /* Adds padding around the content */
+            font-family: Arial, sans-serif; /* Ensures text is readable */
         }
-        .pdf-container {
-            width: 95%; /* Optimal width for larger displays */
-            height: 85vh; /* Adjusted height to consider mobile toolbars */
-            overflow: hidden;
-            border: 1px solid #ccc; /* Stylish border */
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
-        
-        @media (max-width: 768px) { /* Styles for screen widths up to 768px */
-            .pdf-container {
-                width: 100%; /* Full width on smaller screens */
-                height: 100vh; /* Full viewport height on smaller screens */
-                border: none; /* Removes border on smaller devices for edge-to-edge display */
-            }
+        a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="pdf-container">
-        <embed src="NSS2001B_Group 1_Nuclear Energy Poster_References.pdf" type="application/pdf" width="100%" height="100%">
-    </div>
+    <a href="NSS2001B_Group 1_Nuclear Energy Poster_References.pdf" target="_blank">Open PDF</a>
 </body>
 </html>
